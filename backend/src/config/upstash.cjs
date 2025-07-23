@@ -8,7 +8,7 @@ console.log("Initializing rate limiter...");
 // Create rate limiter instance
 const ratelimit = new Ratelimit({
     redis: Redis.fromEnv(),
-    limiter: Ratelimit.slidingWindow(100, "60 s"), // Use Ratelimit.slidingWindow
+    limiter: Ratelimit.slidingWindow(30, "60 s"), // Use Ratelimit.slidingWindow
     analytics: true,
 });
 
