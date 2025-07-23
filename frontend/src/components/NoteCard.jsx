@@ -35,7 +35,7 @@ const NoteCard = ({ note ,setNotes}) => {
 
         <div className="flex items-center gap-2 mt-2">
           <span className="badge badge-secondary">Category: {note.category}</span>
-          <Link to={`/note/edit/${note._id}`} className="btn btn-ghost btn-xs">
+          <Link to={`/note/${note._id}`} className="btn btn-ghost btn-xs">
             <PenSquareIcon className="size-4" />
           </Link>
           <button
